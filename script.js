@@ -4,7 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
         'images/image1.jpg',
         'images/image2.jpg',
         'images/image3.jpg',
-        // Add more images here
+        'images/image4.jpg',
+        'images/image5.jpg',
+        'images/image6.jpg',
+     
     ];
 
     const galleryContainer = document.querySelector('.gallery-container');
