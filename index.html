@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My SPA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h1>About Us</h1>
+            <p>Welcome to our website. We specialize in awesome images!</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery">
+            <h1>Gallery</h1>
+            <div class="gallery-container">
+                <!-- Images will be loaded dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Image Enlargement -->
+    <div id="modal" class="modal">
+        <span id="close-modal" class="close-btn">&times;</span>
+        <img id="modal-img" class="modal-content" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
